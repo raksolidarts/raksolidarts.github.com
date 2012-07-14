@@ -1,0 +1,16 @@
+.content.about {
+  .left, .right {
+    margin-top: 5%;
+    @include columns(7, 15);
+  }
+  
+  ul li a {
+    color: black;
+    text-decoration: none;
+    line-height: 1.2em;
+
+    &:hover {
+      color: #EC008C;
+    }
+  }
+}

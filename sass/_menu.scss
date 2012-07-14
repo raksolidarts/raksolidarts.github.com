@@ -1,0 +1,60 @@
+@media screen/* and (min-width: 1024px)*/ {
+  nav {
+    @include full;
+    position: absolute;
+    bottom: 8%;
+    font-family: 'NovecentowideMedium', Arial;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    z-index: 1000;
+
+    ul {
+      li {
+
+        display: inline-block;
+        margin: 0 -0.5em 0 0;
+        width: 9.5em;
+        padding: 0.2em 0;
+        text-align: center;
+        @include skewX(-45deg);
+
+        &:hover > a {
+          color: black;
+        }
+
+        &.home {
+          background-color: #ec008c;
+        }
+
+        &.about {
+          background-color: #662d91;
+        }
+
+        &.portfolio {
+          background-color: #26ace2;
+        }
+
+        &.contact {
+          background-color: #fcb03c;
+        }
+
+        a {
+          @include skewX(45deg);
+          text-decoration: none;
+          color: white;
+          display: block;
+        }
+
+        ul {
+          position: absolute;
+          bottom: 100%;
+          background-color: inherit;
+
+          a {
+            @include skewX(64deg);
+          }
+        }
+      }
+    }
+  }
+}

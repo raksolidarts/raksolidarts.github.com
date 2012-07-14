@@ -1,0 +1,53 @@
+.content.portfolio {
+  width: 100%;
+
+  .filters {
+    @include columns(2, 15);
+    @include alpha;
+    li {
+      &.selected a {
+        background-color: #662d91;
+        color: white;
+      }
+
+      &.link {
+        margin-top: 10px;
+        background-color: #FCB03C;
+        a {
+          color: black;
+
+          &:hover {
+            color: white;
+          }
+        }
+      }
+    }
+
+    a {
+      color: black;
+      text-decoration: none;
+      line-height: 1.2em;
+
+      &:hover {
+        color: #EC008C;
+      }
+    }
+  }
+
+  .items-container {
+    @include columns(12, 15);
+    @include omega;
+    overflow: auto;
+    position: absolute;
+    height: 80%;
+    left: 20%;
+
+    li {
+      margin: 1%;
+
+      a img {
+        border: 1px solid black;
+      }
+    }
+  }
+}

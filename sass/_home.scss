@@ -1,0 +1,22 @@
+.content.home {
+  margin-left: 2.5%;
+  
+  ul {
+    @extend h1;
+    font-size: 4.5em;
+    position: absolute;
+    top: 26%;
+    list-style: none;
+    line-height: 1em;
+    
+    a {
+      text-decoration: none;
+      color: #c91b8e;
+      
+      &:hover {
+        color: #662d91;
+        @include single-text-shadow(rgba(#c91b8e, 0.6), 0, 1px, 3px);
+      }
+    }
+  }
+}

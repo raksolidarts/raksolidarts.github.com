@@ -1,0 +1,11 @@
+.content.portfolio.music {
+  @include columns(15);
+  #soundcloud {
+    margin-top: 5%;
+    @include columns(8, 15);
+  }
+  
+  #music-logo {
+    margin-top: 5%;
+  }
+}

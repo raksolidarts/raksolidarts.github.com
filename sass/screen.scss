@@ -1,0 +1,30 @@
+// Imports -------------------------------------------------------------------
+
+@import "compass/css3";
+@import "compass/reset/utilities";
+
+@include global-reset;
+
+@import "base";
+@import "fonts";
+@import "background";
+@import "menu";
+@import "menuleft";
+@import "home";
+@import "about";
+@import "portfolio";
+@import "music";
+@import "isotope";
+@import "prettyPhoto";
+
+.pp_nav, .pp_expand {
+  display: none !important;
+}
+
+#footer {
+  @include full;
+  position: absolute;
+  bottom: 3%;
+  z-index: 1000;
+  font-size: 0.7em;
+}

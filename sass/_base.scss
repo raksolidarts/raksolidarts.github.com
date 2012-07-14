@@ -1,0 +1,42 @@
+// Imports -------------------------------------------------------------------
+
+@import "susy";
+
+// Grid ----------------------------------------------------------------------
+
+$total-cols             : 24;
+$col-width              : 3%;
+$gutter-width           : 1%;
+$side-gutter-width      : 2.5%;
+
+$show-grid-backgrounds  : true;
+
+// Init ----------------------------------------------------------------------
+
+body {
+    font-size:100%;
+    line-height:1em;
+    font-family: "Lucida Grande","Lucida Sans",Arial,sans-serif;
+    letter-spacing: 0.02em;
+}
+
+.container {
+  @include full;
+  
+  .content {
+    @include columns(15);
+    margin-top: 2.5%;
+  }
+}
+
+h1, h2, h3 {
+  font-family: 'DuepuntozeroRegular', Arial;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #662d91;
+}
+
+p, .content ul {
+  margin: 2.5% 0 0 0;
+}
