@@ -3,7 +3,7 @@ require 'susy'
 
 
 # Set this to the root of your project when deployed:
-# http_path = "file:///Users/dheerajkumar/projects/raksolidarts/"
+#http_path = "file:///Users/dheerajkumar/projects/raksolidarts.github.com/"
 http_path = "http://raksolidarts.com/"
 css_dir = "stylesheets"
 sass_dir = "sass"
